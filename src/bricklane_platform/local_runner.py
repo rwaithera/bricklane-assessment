@@ -31,5 +31,5 @@ if __name__ == "__main__":
     parser.add_argument("source", help="The source of the payment, currently only 'card' is supported")
     parser.add_argument("share_price", type=Decimal, help="Share price to generate share orders for e.g. '1.30'")
     args = parser.parse_args()
-
+    
     print main(args.csv_path, args.source, args.share_price)
