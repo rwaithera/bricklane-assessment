@@ -16,7 +16,7 @@ class PaymentProcessor(object):
                 ## and we update transfer status
                 if 'bank_account_id' in row:
                     row["card_id"] = row["bank_account_id"]
-                    card_status = ["processed", "status"]
+                    card_status = ["processed", "declined"]
                     import random
                     row["card_status"] = random.choice(card_status)
                 
